@@ -1,0 +1,10 @@
+
+
+<div class="wrapper">
+  <app-customers 
+  [inputData]="parentData" 
+  title="List of Customers" 
+  (msgEvent)="receiveMessage($event)"> 
+</app-customers>
+</div>
+<button type="button" class="btn btn-success" (click)="changeParentData()">Change Parent Data</button>

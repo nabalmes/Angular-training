@@ -1,0 +1,19 @@
+footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70px;
+    width: 100%;
+
+    background: rgb(61 145 188 / 52%);
+    backdrop-filter: blur(10px);
+}
+
+footer h3 {
+    color: #fff;
+}
+
