@@ -1,0 +1,14 @@
+
+<h2>Pipe Examples</h2>
+
+
+<p>Original {{text}}</p>
+<p>Uppercase: {{text | uppercase}}</p>
+<p>lowercase: {{text | lowercase}}</p>
+<p>Titlecase: {{text | titlecase}}</p>
+<p>Date: {{currentDate | date: "YYYY-MMM-dd"}}</p>
+<p>Number: {{num | number: "1.0-0"}}</p>
+<p>Price: {{ price | number: "1.0-0" | currency: "PHP" }}</p>
+<p>Percentage: {{ percent | percent: "2.0-2" }}</p>
+<p>Data: {{ (data$ | async)?.fullName }}</p>
+<p>Birthday: {{ currentDate | birthday }}</p>

@@ -1,0 +1,13 @@
+$color-yellow: yellow;
+$border-yellow: yellow;
+
+
+.highlight {
+    background-color: $color-yellow;
+}
+
+div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid $border-yellow;
+}

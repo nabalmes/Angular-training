@@ -1,0 +1,18 @@
+<div [ngClass]="{'highlight': isHighlighted}">
+<!-- <p>test</p> -->
+</div>
+<button (click)="toggleHighlight()">Toggle Highlight</button>
+
+
+<div >
+<p [ngStyle]="textStyle">Dynamic</p>
+</div>
+
+<div>
+    <p>Use ngModel for two-way data binding on input elements.</p>
+    <input [(ngModel)]="inputValue" placeholder="Type something...">
+    <p>You typed: {{ inputValue }}</p>
+  </div>
+
+
+  <div appHoverHighlight>MEKUS MEKUS</div>

@@ -1,0 +1,12 @@
+<div *ngIf="isUserLoggedIn">
+    welcome, {{fullName}}
+
+    <div [ngSwitch]="status">
+        <div *ngSwitchCase="statuses[0]">User is Active</div>
+        <div *ngSwitchCase="statuses[1]">User is Inactive</div>
+        <div *ngSwitchDefault="'inactive'">User status is unknown!</div>
+    </div>
+</div>
+<ul>
+    <li *ngFor="let customer of customers">{{customer.lastName}}, {{customer.firstName}} - {{customer.age}}</li>
+</ul>

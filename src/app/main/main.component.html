@@ -1,10 +1,9 @@
-
-
+<app-stuctural-directives></app-stuctural-directives>
 <div class="wrapper">
-  <app-customers 
-  [inputData]="parentData" 
-  title="List of Customers" 
-  (msgEvent)="receiveMessage($event)"> 
-</app-customers>
+  <app-customers [inputData]="parentData" title="List of Customers" (msgEvent)="receiveMessage($event)">
+  </app-customers>
 </div>
 <button type="button" class="btn btn-success" (click)="changeParentData()">Change Parent Data</button>
+<app-pipe-examples></app-pipe-examples>
+<app-attribute-directives></app-attribute-directives>
+<app-customer></app-customer>
